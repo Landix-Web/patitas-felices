@@ -1,0 +1,267 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Estética Canina "Patitas Felices" - Cuidado Profesional para tu Mascota</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+    <link rel="stylesheet" href="src/style.css">
+    <link href="https://cdn.jsdelivr.net/npm/tailwindcss@2.2.19/dist/tailwind.min.css" rel="stylesheet">
+    <style>
+        @keyframes fadeInScale {
+            from {
+                opacity: 0;
+                transform: scale(0.9);
+            }
+            to {
+                opacity: 1;
+                transform: scale(1);
+            }
+        }
+        @keyframes slideInLeft {
+            from {
+                opacity: 0;
+                transform: translateX(-50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        @keyframes slideInRight {
+            from {
+                opacity: 0;
+                transform: translateX(50px);
+            }
+            to {
+                opacity: 1;
+                transform: translateX(0);
+            }
+        }
+        .animate-fadeInScale {
+            animation: fadeInScale 1s ease-out forwards;
+        }
+        .animate-slideInLeft {
+            animation: slideInLeft 0.8s ease-out forwards;
+        }
+        .animate-slideInRight {
+            animation: slideInRight 0.8s ease-out forwards;
+        }
+        /* Estilos adicionales para la etiqueta del nombre del perrito */
+        .image-container {
+            position: relative;
+        }
+        .dog-name-tag {
+            position: absolute;
+            bottom: 10px;
+            left: 10px;
+            background-color: rgba(0, 0, 0, 0.6);
+            color: white;
+            padding: 5px 10px;
+            border-radius: 5px;
+            font-size: 0.9rem;
+            font-weight: bold;
+        }
+    </style>
+</head>
+<body class="font-sans text-gray-800 bg-gradient-to-r from-pink-100 via-purple-100 to-yellow-100">
+
+    <header class="bg-white shadow-lg py-4 px-6 md:px-12 flex justify-between items-center fixed w-full z-10 top-0">
+        <div class="flex items-center">
+            <img src="src/img/logo.jpg" alt="Logo Patitas Felices" class="h-12 w-12 mr-3 rounded-full animate-bounce">
+            <h1 class="text-3xl font-extrabold text-purple-600"><b class="p">Patitas</b> <b class="f">Felices</b></h1>
+        </div>
+        <nav class="flex items-center space-x-6">
+            <ul class="flex space-x-6">
+                <li><a href="#inicio" class="text-lg font-semibold text-pink-500 hover:text-purple-700 transition duration-300">Inicio</a></li>
+                <li><a href="#servicios" class="text-lg font-semibold text-pink-500 hover:text-purple-700 transition duration-300">Servicios</a></li>
+                <li><a href="#galeria" class="text-lg font-semibold text-pink-500 hover:text-purple-700 transition duration-300">Galería</a></li>
+                <li><a href="#contacto" class="text-lg font-semibold text-pink-500 hover:text-purple-700 transition duration-300">Contacto</a></li>
+            </ul>
+            <div class="flex space-x-4 ml-6">
+                <a href="https://www.facebook.com/tupagina" target="_blank" class="text-purple-600 hover:text-blue-600 transition duration-300">
+                    <i class="fab fa-facebook-square text-3xl"></i>
+                </a>
+                <a href="https://www.instagram.com/tuusuario" target="_blank" class="text-purple-600 hover:text-pink-500 transition duration-300">
+                    <i class="fab fa-instagram-square text-3xl"></i>
+                </a>
+                <a href="https://wa.me/tunumerodetelefono" target="_blank" class="text-purple-600 hover:text-green-500 transition duration-300">
+                    <i class="fab fa-whatsapp-square text-3xl"></i>
+                </a>
+            </div>
+        </nav>
+    </header>
+
+    <section id="inicio" class="relative h-screen flex items-center justify-center text-center overflow-hidden" style="background-image: url('src/img/hero.png'); background-size: cover; background-position: center;">
+        <div class="absolute inset-0 bg-black opacity-40"></div>
+        <div class="relative z-10 text-white p-8 rounded-lg">
+            <h2 class="text-6xl font-extrabold mb-4 animate-slideInLeft">¡Tu Mascota, Nuestra Pasión!</h2>
+            <p class="text-2xl mb-8 animate-slideInRight">En "Patitas Felices", cuidamos a tu mejor amigo con amor y profesionalismo.</p>
+            <a href="#servicios" class="bg-yellow-400 text-purple-800 font-bold py-3 px-8 rounded-full text-xl hover:bg-yellow-500 transition duration-300 shadow-lg animate-fadeInScale">Descubre Nuestros Servicios</a>
+        </div>
+    </section>
+
+    <section id="servicios" class="py-20 px-6 md:px-12 bg-white">
+        <h2 class="text-5xl font-extrabold text-center text-purple-700 mb-16 animate-slideInLeft">Nuestros Servicios de Primera</h2>
+        <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-12">
+            <div class="bg-pink-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInScale" style="animation-delay: 0.2s;">
+                <img src="src/img/b.png" alt="Baño y Cepillado" class="h-24 w-24 mx-auto mb-6">
+                <h3 class="text-3xl font-bold text-purple-600 mb-4 text-center">Baño y Cepillado</h3>
+                <p class="text-lg text-gray-700 text-center">Dejamos a tu mascota limpia, fresca y con un pelaje radiante, usando productos de alta calidad.</p>
+            </div>
+            <div class="bg-yellow-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInScale" style="animation-delay: 0.4s;">
+                <img src="src/img/cp.png" alt="Corte de Pelo" class="h-24 w-24 mx-auto mb-6">
+                <h3 class="text-3xl font-bold text-purple-600 mb-4 text-center">Corte de Pelo y Estilos</h3>
+                <p class="text-lg text-gray-700 text-center">Cortes personalizados para cada raza, estilo y preferencia, realizados por expertos peluqueros.</p>
+            </div>
+            <div class="bg-blue-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInScale" style="animation-delay: 0.6s;">
+                <img src="src/img/u.png" alt="Corte de Uñas" class="h-24 w-24 mx-auto mb-6">
+                <h3 class="text-3xl font-bold text-purple-600 mb-4 text-center">Corte de Uñas y Limpieza</h3>
+                <p class="text-lg text-gray-700 text-center">Mantenemos las patitas de tu mascota sanas y cómodas con nuestro servicio de corte de uñas.</p>
+            </div>
+            <div class="bg-green-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInScale" style="animation-delay: 0.8s;">
+                <img src="src/img/ld.png" alt="Limpieza Dental" class="h-24 w-24 mx-auto mb-6">
+                <h3 class="text-3xl font-bold text-purple-600 mb-4 text-center">Limpieza Dental</h3>
+                <p class="text-lg text-gray-700 text-center">Cuidado dental para prevenir problemas bucales y mantener un aliento fresco en tu mascota.</p>
+            </div>
+            <div class="bg-orange-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInScale" style="animation-delay: 1s;">
+                <img src="src/img/te.png" alt="Tratamientos Especiales" class="h-24 w-24 mx-auto mb-6">
+                <h3 class="text-3xl font-bold text-purple-600 mb-4 text-center">Tratamientos Especiales</h3>
+                <p class="text-lg text-gray-700 text-center">Desde tratamientos antipulgas hasta hidratación profunda para un pelaje espectacular.</p>
+            </div>
+            <div class="bg-red-50 p-8 rounded-xl shadow-lg hover:shadow-xl transition-all duration-300 transform hover:-translate-y-2 animate-fadeInScale" style="animation-delay: 1.2s;">
+                <img src="src/img/spa.png" alt="Spa para Mascotas" class="h-24 w-24 mx-auto mb-6">
+                <h3 class="text-3xl font-bold text-purple-600 mb-4 text-center">Spa para Mascotas</h3>
+                <p class="text-lg text-gray-700 text-center">Una experiencia relajante y mimadora para que tu mascota se sienta como en el paraíso.</p>
+            </div>
+        </div>
+    </section>
+
+    <section id="galeria" class="py-20 px-6 md:px-12 bg-gradient-to-r from-purple-50 via-pink-50 to-yellow-50">
+        <h2 class="text-5xl font-extrabold text-center text-pink-700 mb-16 animate-slideInRight">Nuestras Patitas Felices</h2>
+        <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-3 lg:grid-cols-4 gap-8">
+            <div class="image-container rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 transform hover:scale-105 animate-fadeInScale" style="animation-delay: 0.1s;">
+                <img src="src/img/p1.png" alt="Perro Feliz 1" class="w-full h-auto rounded-lg">
+                <span class="dog-name-tag">Max</span>
+            </div>
+            <div class="image-container rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 transform hover:scale-105 animate-fadeInScale" style="animation-delay: 0.2s;">
+                <img src="src/img/p2.png" alt="Perro Feliz 2" class="w-full h-auto rounded-lg">
+                <span class="dog-name-tag">Bella</span>
+            </div>
+            <div class="image-container rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 transform hover:scale-105 animate-fadeInScale" style="animation-delay: 0.3s;">
+                <img src="src/img/p3.png" alt="Perro Feliz 3" class="w-full h-auto rounded-lg">
+                <span class="dog-name-tag">Rocky</span>
+            </div>
+            <div class="image-container rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 transform hover:scale-105 animate-fadeInScale" style="animation-delay: 0.4s;">
+                <img src="src/img/p4.png" alt="Perro Feliz 4" class="w-full h-auto rounded-lg">
+                <span class="dog-name-tag">Luna</span>
+            </div>
+            <div class="image-container rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 transform hover:scale-105 animate-fadeInScale" style="animation-delay: 0.5s;">
+                <img src="src/img/p5.png" alt="Perro Feliz 5" class="w-full h-auto rounded-lg">
+                <span class="dog-name-tag">Buddy</span>
+            </div>
+            <div class="image-container rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 transform hover:scale-105 animate-fadeInScale" style="animation-delay: 0.6s;">
+                <img src="src/img/p6.png" alt="Perro Feliz 6" class="w-full h-auto rounded-lg">
+                <span class="dog-name-tag">Daisy</span>
+            </div>
+            <div class="image-container rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 transform hover:scale-105 animate-fadeInScale" style="animation-delay: 0.7s;">
+                <img src="src/img/p7.png" alt="Perro Feliz 7" class="w-full h-auto rounded-lg">
+                <span class="dog-name-tag">Charlie</span>
+            </div>
+            <div class="image-container rounded-lg shadow-md hover:shadow-xl transition-transform duration-300 transform hover:scale-105 animate-fadeInScale" style="animation-delay: 0.8s;">
+                <img src="src/img/p8.png" alt="Perro Feliz 8" class="w-full h-auto rounded-lg">
+                <span class="dog-name-tag">Coco</span>
+            </div>
+        </div>
+    </section>
+
+    <section id="contacto" class="py-20 px-6 md:px-12 bg-white">
+        <h2 class="text-5xl font-extrabold text-center text-purple-700 mb-16 animate-slideInLeft">Contáctanos</h2>
+        <div class="max-w-3xl mx-auto grid grid-cols-1 md:grid-cols-2 gap-12">
+            <div class="bg-pink-50 p-8 rounded-xl shadow-lg animate-fadeInScale" style="animation-delay: 0.2s;">
+                <h3 class="text-3xl font-bold text-purple-600 mb-6">Estamos Aquí para Ayudarte</h3>
+                <p class="text-lg text-gray-700 mb-4"><strong class="text-pink-500">Dirección:</strong> Calle Ficticia #123, Ciudad Alegre, País Canino</p>
+                <p class="text-lg text-gray-700 mb-4"><strong class="text-pink-500">Teléfono:</strong> +123 456 7890</p>
+                <p class="text-lg text-gray-700 mb-4"><strong class="text-pink-500">Email:</strong> info@patitasfelices.com</p>
+                <p class="text-lg text-gray-700"><strong class="text-pink-500">Horario:</strong> Lun-Vie: 9:00 AM - 6:00 PM | Sáb: 10:00 AM - 2:00 PM</p>
+            </div>
+            <div class="bg-yellow-50 p-8 rounded-xl shadow-lg animate-fadeInScale" style="animation-delay: 0.4s;">
+                <h3 class="text-3xl font-bold text-purple-600 mb-6">Envíanos un Mensaje</h3>
+                <form class="space-y-6">
+                    <div>
+                        <label for="name" class="block text-lg font-semibold text-gray-700 mb-2">Nombre Completo</label>
+                        <input type="text" id="name" name="name" class="w-full px-4 py-3 rounded-lg border-2 border-purple-300 focus:outline-none focus:border-purple-500 transition duration-300" placeholder="Tu Nombre">
+                    </div>
+                    <div>
+                        <label for="email" class="block text-lg font-semibold text-gray-700 mb-2">Correo Electrónico</label>
+                        <input type="email" id="email" name="email" class="w-full px-4 py-3 rounded-lg border-2 border-purple-300 focus:outline-none focus:border-purple-500 transition duration-300" placeholder="tu.email@ejemplo.com">
+                    </div>
+                    <div>
+                        <label for="message" class="block text-lg font-semibold text-gray-700 mb-2">Tu Mensaje</label>
+                        <textarea id="message" name="message" rows="5" class="w-full px-4 py-3 rounded-lg border-2 border-purple-300 focus:outline-none focus:border-purple-500 transition duration-300" placeholder="¿Cómo podemos ayudarte?"></textarea>
+                    </div>
+                    <button type="submit" class="w-full bg-purple-600 text-white font-bold py-3 px-6 rounded-full text-xl hover:bg-purple-700 transition duration-300 shadow-lg">Enviar Mensaje</button>
+                </form>
+            </div>
+        </div>
+    </section>
+
+    <footer class="bg-purple-700 text-white py-10 px-6 md:px-12 text-center">
+        <p class="text-lg mb-4">&copy; 2025 Patitas Felices. Todos los derechos reservados.</p>
+        <div class="flex justify-center space-x-6">
+            <a href="https://www.facebook.com/tupagina" target="_blank" class="text-white hover:text-yellow-300 transition duration-300 text-2xl"><i class="fab fa-facebook-f"></i></a>
+            <a href="https://www.instagram.com/tuusuario" target="_blank" class="text-white hover:text-yellow-300 transition duration-300 text-2xl"><i class="fab fa-instagram"></i></a>
+            <a href="https://twitter.com/tuusuario" target="_blank" class="text-white hover:text-yellow-300 transition duration-300 text-2xl"><i class="fab fa-twitter"></i></a>
+        </div>
+    </footer>
+
+    <script>
+        // Smooth scrolling for navigation links
+        document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+            anchor.addEventListener('click', function (e) {
+                e.preventDefault();
+
+                document.querySelector(this.getAttribute('href')).scrollIntoView({
+                    behavior: 'smooth'
+                });
+            });
+        });
+
+        // Intersection Observer for animations
+        const animateElements = document.querySelectorAll('.animate-fadeInScale, .animate-slideInLeft, .animate-slideInRight');
+
+        const observer = new IntersectionObserver((entries) => {
+            entries.forEach(entry => {
+                if (entry.isIntersecting) {
+                    entry.target.style.opacity = 1;
+                    entry.target.style.transform = 'none';
+                    // Remove the class so animation doesn't replay on scroll up/down
+                    entry.target.classList.remove('animate-fadeInScale', 'animate-slideInLeft', 'animate-slideInRight');
+                    observer.unobserve(entry.target); // Stop observing once animated
+                }
+            });
+        }, {
+            threshold: 0.1 // Trigger when 10% of the element is visible
+        });
+
+        animateElements.forEach(element => {
+            // Initially set opacity to 0 and transform for animation effect
+            element.style.opacity = 0;
+            if (element.classList.contains('animate-slideInLeft')) {
+                element.style.transform = 'translateX(-50px)';
+            } else if (element.classList.contains('animate-slideInRight')) {
+                element.style.transform = 'translateX(50px)';
+            } else if (element.classList.contains('animate-fadeInScale')) {
+                element.style.transform = 'scale(0.9)';
+            }
+            observer.observe(element);
+        });
+
+        // Simple animation for the logo
+        const logo = document.querySelector('.animate-bounce');
+        setInterval(() => {
+            logo.classList.toggle('scale-110'); // Example of continuous bounce effect
+        }, 1000); // Every 1 second
+    </script>
+</body>
+</html>
